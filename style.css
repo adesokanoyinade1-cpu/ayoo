@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg,#ff9ecf,#ffc3e6);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#password-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #ff4da6;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    color: #ff4da6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section.active {
+    opacity: 1;
+}
+
+.big-title {
+    font-size: 3rem;
+}
+
+.romantic, .long-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.6rem;
+    max-width: 90%;
+}
+
+.teddy {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.fireworks {
+    font-size: 3rem;
+    margin-top: 20px;
+}
